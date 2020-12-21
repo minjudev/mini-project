@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bebas+Neue|Ubuntu|Do+Hyeon|Black+Han+Sans|Jua&display=swap');
+
+body {
+    background-color: #e4e2e2f8;
+    font-family: 'Jua', sans-serif;
+}
+
+#container {
+    width: 750px;
+    height: 450px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 15px 15px 15px;
+}
+
+#left-side,
+#right-side {
+    height: 100%;
+}
+
+#left-side {
+    float: left;
+    width: 275px;
+    background: rgb(126, 161, 236);
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+#currentDate,
+#currentDay,
+#readToDo {
+    position: relative;
+    top: 80px;
+}
+
+#currentDate {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#currentDay {
+    font-size: 25px; 
+    font-weight: bold;   
+}
+
+#toDoTitle {
+    font-size: 20px;
+    text-align: left;
+    padding: 30px 0 0 45px;
+}
+
+#toDo {
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 65px;
+    font-family: 'Jua', sans-serif;
+}
+
+.toDoList {
+    padding-left: 5px;
+    list-style-type: decimal;
+}
+
+.delBtn {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    background: none;
+}
+
+#writeToDo {
+    position: absolute;
+    bottom: 23px;
+    left: 18.5%;
+    transform: translateX(-50%);
+}
+
+::placeholder {
+    color: white;
+}
+
+#createToDo {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid white;
+    width: 160px;
+    padding-left: 2px;
+    font-family: 'Jua', sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+#createToDoBtn {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-color: white;
+    border-style: solid;
+    border-radius: 45%;
+    background: transparent;
+    background-color: rgb(126, 161, 236);
+}
+
+#right-side {
+    width: 475px;
+    background: white;
+    float: right;
+    border-radius: 0 10px 10px 0;
+}
+
+#year,
+#prevYear,
+#nextYear {
+    font-weight: bold;
+}
+
+#year {
+    text-align: right;
+    padding: 30px 20px 0 0;
+    color: rgb(63, 62, 62);
+}
+
+#prevYear {
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+#nextYear {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#month {
+    display: flex;
+    font-size: 15px;
+    padding: 30px 0 0 0;
+    color: rgb(150, 149, 149);
+}
+
+#month div {
+    width: 8.33%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.currentMonth {
+    color: black;
+}
+
+#dividingLine {
+    width: 97%;
+    border: 0;
+    height: 1.5px;
+    background-color: rgb(197, 196, 196);
+}
+
+#dayOfWeek {
+    display: flex;
+    padding: 15px 0 0 0;
+    color: rgb(63, 62, 62);
+}
+
+#dayOfWeek div {
+    width: 14.28%;
+    text-align: center;
+}
+
+#days {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(63, 62, 62);
+}
+
+#days div {
+    width: 14.28%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+#days div:hover {
+    background-color: rgb(226, 222, 222);
+}
+
+.prevDate {
+    color: rgb(197, 196, 196);
+}
+
+.current {
+    color: white;
+    background: rgb(126, 161, 236);
+}

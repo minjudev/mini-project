@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
+
+body {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    text-shadow: #000 3px 3px 5px;
+}
+
+.form,
+.greetings {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: #000 3px 3px 5px;
+}
+
+.inputText {
+    font-size: 20px;
+    width: 250px;
+    height: 20px;
+    padding: 5px;
+}
+
+.toDoForm,
+.toDoList {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: #000 3px 3px 3px;
+    list-style: none;
+}
+ 
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: round;
+    background-size: cover;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
